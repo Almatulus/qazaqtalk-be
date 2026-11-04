@@ -98,9 +98,6 @@ wss.on("connection", (client) => {
       const freedomSpeech = await freedomSpeechPromise;
 
       // Отправляем текст на синтез.
-      const text = "<slower>Привет, как твои дела?</slower>";
-
-      console.log("TTS TEXT:", text);
 
       freedomSpeech.synthesize(message.text, message.requestId);
 
