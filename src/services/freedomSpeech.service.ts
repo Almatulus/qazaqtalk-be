@@ -50,7 +50,6 @@ export function connectFreedomSpeech(
               type: "synthesize",
               text,
               voice: "tomiris",
-              language: "kk",
               model: "freedomspeech",
               requestId,
             }),
